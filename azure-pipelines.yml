@@ -16,6 +16,9 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
+- task: Npm@1
+  inputs:
+    command: 'install'
     npm install
     npm run publish:win
     gulp default --gulpfile gulpfile.js
