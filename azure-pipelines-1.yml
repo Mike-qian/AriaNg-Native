@@ -16,8 +16,7 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    npm uninstall -g cnpm
-    npm install cnpm@7.1.0 -g
+    npm install fs
     npm install
     npm run publish:win
   displayName: 'npm install and build'
