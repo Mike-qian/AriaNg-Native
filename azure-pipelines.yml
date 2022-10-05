@@ -17,6 +17,6 @@ steps:
 
 - script: |
     npm install
+    npm run publish:win
     gulp default --gulpfile gulpfile.js
   displayName: 'npm install and run gulp'
-npm run publish:win
